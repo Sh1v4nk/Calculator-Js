@@ -51,3 +51,25 @@ body {
 .equal {
   width: 9.3rem;
 }
+
+@media (max-width: 768px) {
+  .calculator {
+    padding: 0.8rem;
+  }
+  
+  .btn {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+  }
+  
+  .result {
+    font-size: 1.5rem;
+  }
+  
+  .equal {
+    width: 7.5rem;
+  }
+}
+  
