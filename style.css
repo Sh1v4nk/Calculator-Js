@@ -16,10 +16,13 @@ body {
 .container {
   width: 100%;
   height: 100vh;
+  max-width: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 0 auto;
+
 }
 
 .calculator {
@@ -34,13 +37,14 @@ body {
   width: 3.75rem;
   height: 3.75rem;
   border-radius: 10px;
-  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
   font-size: 1.3rem;
   cursor: pointer;
-  margin: .7rem;
+  margin: 0.7rem;
 }
 
-.result{
+.result {
   background: transparent;
   color: #f2f2f2;
   text-align: right;
@@ -56,20 +60,20 @@ body {
   .calculator {
     padding: 0.8rem;
   }
-  
+
   .btn {
     width: 3rem;
     height: 3rem;
     font-size: 1.1rem;
     margin: 0.5rem;
   }
-  
+
   .result {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    width: 17rem;
   }
-  
+
   .equal {
     width: 7.5rem;
   }
 }
-  
