@@ -6,6 +6,14 @@ This is a simple calculator project built with JavaScript, HTML, and CSS. It all
 
 To get started with this project, simply clone the repository and open the `index.html` file in your web browser. You can also view a live demo of the calculator [here](https://sh1v4nk.github.io/Calculator/).
 
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+
+## Screenshots
+<img src="https://i.ibb.co/597wdkR/Calculator.png" alt="Calculator Screenshot"/>
+
 ---
 
 Thank you for visiting my Calculator repository. If you have any suggestions or feedback, feel free to reach out to me.
