@@ -22,7 +22,6 @@ body {
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
-
 }
 
 .calculator {
@@ -42,6 +41,7 @@ body {
   font-size: 1.3rem;
   cursor: pointer;
   margin: 0.7rem;
+  transition: 0.2s;
 }
 
 .result {
@@ -52,8 +52,33 @@ body {
   font-size: 1.75rem;
 }
 
+.fnc {
+  color: rgba(0, 172, 240);
+}
+
+.fnc:hover {
+  color: #f2f2f2;
+}
+
 .equal {
   width: 9.3rem;
+  font-size: 1.5rem;
+  color: #000000;
+  background: rgba(0, 172, 240);
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: scale(1.2);
+}
+
+.equal:hover {
+  background: rgba(0, 172, 240, 0.8);
+}
+
+::placeholder {
+  color: #f2f2f2;
+  opacity: 0.7;
 }
 
 @media (max-width: 768px) {
