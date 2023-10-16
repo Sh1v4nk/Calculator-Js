@@ -12,7 +12,7 @@ To get started with this project, simply clone the repository and open the `inde
 - JavaScript
 
 ## Screenshots
-<img src="https://i.ibb.co/597wdkR/Calculator.png" alt="Calculator Screenshot"/>
+<img src="https://i.ibb.co/3fsJ5z4/Calculator.png" alt="Calculator Screenshot"/>
 
 ---
 
