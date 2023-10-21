@@ -56,10 +56,6 @@ body {
   color: rgba(0, 172, 240);
 }
 
-.fnc:hover {
-  color: #f2f2f2;
-}
-
 .equal {
   width: 9.3rem;
   font-size: 1.5rem;
@@ -70,6 +66,10 @@ body {
 .btn:hover {
   background: rgba(255, 255, 255, 0.14);
   transform: scale(1.2);
+}
+
+.btn:active {
+  transform: scale(.8);
 }
 
 .equal:hover {
