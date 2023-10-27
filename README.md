@@ -20,7 +20,9 @@ To get started with this project, simply clone the repository and open the `inde
 
 ## Screenshots
 
-<img src="https://i.ibb.co/3fsJ5z4/Calculator.png" alt="Calculator Screenshot"/>
+<div align="center">
+    <img src="https://i.ibb.co/3fsJ5z4/Calculator.png" alt="Calculator Screenshot" height="auto" />
+</div>
 
 ---
 
