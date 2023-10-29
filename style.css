@@ -96,6 +96,19 @@ body {
     margin: 0.5rem;
   }
 
+  .btn:hover {
+    background: transparent;
+    transform: scale(1);
+  }
+
+  .btn:active {
+    transform: scale(0.6);
+  }
+
+  .equal:hover {
+    background: rgba(0, 172, 240);
+  }
+
   .result {
     font-size: 2rem;
     width: 17rem;
