@@ -27,7 +27,7 @@ To start using the calculator, follow these steps:
 - CSS
 - JavaScript
 
-## Screenshots
+## Screenshot
 
 <div align="center">
     <img src="https://i.ibb.co/3fsJ5z4/Calculator.png" alt="Calculator Screenshot" height="auto" />
