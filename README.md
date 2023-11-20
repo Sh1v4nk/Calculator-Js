@@ -7,6 +7,7 @@ Welcome to my simple Calculator project! This project is built using HTML, CSS, 
 - [Getting Started](#getting-started)
 - [Technologies Used](#technologies-used)
 - [Screenshots](#screenshots)
+- [Contributing](#contributing)
 
 ## Getting Started
 
@@ -32,6 +33,10 @@ To start using the calculator, follow these steps:
 <div align="center">
     <img src="https://i.ibb.co/3fsJ5z4/Calculator.png" alt="Calculator Screenshot" height="auto" />
 </div>
+
+## Contributing
+
+Contributions are welcome! If you have any ideas for improvements or new features, feel free to fork the repository and submit a pull request.
 
 ---
 
