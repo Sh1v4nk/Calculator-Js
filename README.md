@@ -6,7 +6,7 @@ Welcome to my simple Calculator project! This project is built using HTML, CSS, 
 
 - [Getting Started](#getting-started)
 - [Technologies Used](#technologies-used)
-- [Screenshots](#screenshots)
+- [Screenshot](#screenshot)
 - [Contributing](#contributing)
 
 ## Getting Started
