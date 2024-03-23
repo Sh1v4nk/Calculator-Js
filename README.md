@@ -20,7 +20,7 @@ To start using the calculator, follow these steps:
 ```
 2. Open the `index.html` file in your web browser.
 
-3. Alternatively, you can view a live demo of the calculator [here](https://sh1v4nk.github.io/Calculator/).
+3. Alternatively, you can view a live demo of the [Calculator](https://sh1v4nk.github.io/Calculator/).
 
 ## Technologies Used
 
