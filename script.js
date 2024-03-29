@@ -1,5 +1,6 @@
 const resultElement = document.querySelector(".result");
 const buttons = document.querySelectorAll(".btn");
+let hasDecimal = false; // Flag to track if a decimal point has been entered
 
 buttons.forEach((button) => {
   button.addEventListener("click", function () {
@@ -9,15 +10,24 @@ buttons.forEach((button) => {
     switch (buttonText) {
       case "AC":
         resultElement.value = "";
+        hasDecimal = false;
         break;
       case "DEL":
         resultElement.value = resultElement.value.slice(0, -1);
+        hasDecimal = resultElement.value.includes(".") ? true : false;
         break;
       case "=":
         try {
           resultElement.value = eval(resultElement.value);
+          hasDecimal = false; // Reset decimal flag after evaluation
         } catch (error) {
           resultElement.value = "Error";
+        }
+        break;
+      case ".":
+        if (!hasDecimal) {
+          resultElement.value += buttonText;
+          hasDecimal = true;
         }
         break;
       case "+":
@@ -28,6 +38,7 @@ buttons.forEach((button) => {
           resultElement.value = resultElement.value.slice(0, -1) + buttonText;
         } else {
           resultElement.value += buttonText;
+          hasDecimal = false; // Reset decimal flag after operator
         }
         break;
       default:
