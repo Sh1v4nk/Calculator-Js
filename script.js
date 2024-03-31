@@ -21,7 +21,7 @@ buttons.forEach((button) => {
           resultElement.value = eval(resultElement.value);
           hasDecimal = false; // Reset decimal flag after evaluation
         } catch (error) {
-          resultElement.value = "Error";
+          resultElement.value = "Maths Error.";
         }
         break;
       case ".":
