@@ -9,41 +9,67 @@ buttons.forEach((button) => {
 
     switch (buttonText) {
       case "AC":
-        resultElement.value = "";
-        hasDecimal = false;
+        clearResult();
         break;
       case "DEL":
-        resultElement.value = resultElement.value.slice(0, -1);
-        hasDecimal = resultElement.value.includes(".") ? true : false;
+        deleteLastCharacter();
         break;
       case "=":
-        try {
-          resultElement.value = eval(resultElement.value);
-          hasDecimal = false; // Reset decimal flag after evaluation
-        } catch (error) {
-          resultElement.value = "Maths Error.";
-        }
+        evaluateExpression();
         break;
       case ".":
-        if (!hasDecimal) {
-          resultElement.value += buttonText;
-          hasDecimal = true;
-        }
+        handleDecimal();
         break;
       case "+":
       case "-":
       case "*":
       case "/":
-        if (["+", "-", "*", "/"].includes(lastChar)) {
-          resultElement.value = resultElement.value.slice(0, -1) + buttonText;
-        } else {
-          resultElement.value += buttonText;
-          hasDecimal = false; // Reset decimal flag after operator
-        }
+        handleOperator(buttonText, lastChar);
         break;
       default:
-        resultElement.value += buttonText;
+        appendCharacter(buttonText);
         break;
     }
   });
 });
+
+function clearResult() {
+  resultElement.value = "";
+  hasDecimal = false;
+}
+
+function deleteLastCharacter() {
+  resultElement.value = resultElement.value.slice(0, -1);
+  hasDecimal = resultElement.value.includes(".") ? true : false;
+}
+
+function evaluateExpression() {
+  try {
+    resultElement.value = eval(resultElement.value);
+    hasDecimal = false; // Reset decimal flag after evaluation
+  } catch (error) {
+    resultElement.value = "Invalid Expression";
+  }
+}
+
+function handleDecimal() {
+  if (resultElement.value === "Invalid Expression") clearResult();
+  if (!hasDecimal) {
+    resultElement.value += ".";
+    hasDecimal = true;
+  }
+}
+
+function handleOperator(character, lastChar) {
+  if (["+", "-", "*", "/", "."].includes(lastChar)) {
+    resultElement.value = resultElement.value.slice(0, -1) + character;
+  } else {
+    resultElement.value += character;
+    hasDecimal = false; // Reset decimal flag after operator
+  }
+}
+
+function appendCharacter(character) {
+  if (resultElement.value === "Invalid Expression") clearResult();
+  resultElement.value += character;
+}
