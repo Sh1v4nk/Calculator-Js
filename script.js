@@ -45,7 +45,12 @@ function deleteLastCharacter() {
 
 function evaluateExpression() {
   try {
-    resultElement.value = eval(resultElement.value);
+    const result = eval(resultElement.value);
+    if (result === Infinity || result === -Infinity) {
+      resultElement.value = "Can't divide by 0";
+    } else {
+      resultElement.value = result;
+    }
     hasDecimal = false; // Reset decimal flag after evaluation
   } catch (error) {
     resultElement.value = "Invalid Expression";
@@ -53,7 +58,7 @@ function evaluateExpression() {
 }
 
 function handleDecimal() {
-  if (resultElement.value === "Invalid Expression") clearResult();
+  if (resultElement.value === "Invalid Expression" || resultElement.value === "Can't divide by 0") clearResult();
   if (!hasDecimal) {
     resultElement.value += ".";
     hasDecimal = true;
@@ -70,6 +75,6 @@ function handleOperator(character, lastChar) {
 }
 
 function appendCharacter(character) {
-  if (resultElement.value === "Invalid Expression") clearResult();
+  if (resultElement.value === "Invalid Expression" || resultElement.value === "Can't divide by 0") clearResult();
   resultElement.value += character;
 }
