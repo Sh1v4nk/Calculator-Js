@@ -9,7 +9,7 @@ Welcome to my simple Calculator project! This project is built using HTML, CSS, 
 - [Screenshot](#screenshot)
 - [Contributing](#contributing)
 
-## 🚀 Getting Started
+## Getting Started
 
 To start using the calculator, follow these steps:
 
@@ -22,19 +22,19 @@ To start using the calculator, follow these steps:
 
 3. Alternatively, you can view a live demo of the [Calculator](https://sh1v4nk.github.io/Calculator/).
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - HTML
 - CSS
 - JavaScript
 
-## 📸 Screenshot
+## Screenshot
 
 <div align="center">
     <img src="https://i.ibb.co/3fsJ5z4/Calculator.png" alt="Calculator Screenshot" height="auto" />
 </div>
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! If you have any ideas for improvements or new features, feel free to fork the repository and submit a pull request. Please follow these steps:
 
