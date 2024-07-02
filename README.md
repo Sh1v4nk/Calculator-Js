@@ -18,12 +18,13 @@ To start using the calculator, follow these steps:
 ```bash
  git clone https://github.com/Sh1v4nk/Calculator.git
 ```
+2. Navigate into the project directory:
 ```
  cd Calculator
 ```
-2. Open the `index.html` file in your web browser.
+3. Open the `index.html` file in your web browser.
 
-3. Alternatively, you can view a live demo of the [Calculator](https://sh1v4nk.github.io/Calculator/).
+4. Alternatively, you can view a live demo of the [Calculator](https://sh1v4nk.github.io/Calculator/).
 
 ## Technologies Used
 
