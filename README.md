@@ -28,7 +28,7 @@ To start using the calculator, follow these steps:
 
 ## Technologies Used
 
-- HTML
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - CSS
 - JavaScript
 
