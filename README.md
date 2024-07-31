@@ -29,7 +29,7 @@ To start using the calculator, follow these steps:
 ## Technologies Used
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- CSS
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - JavaScript
 
 ## Screenshot
