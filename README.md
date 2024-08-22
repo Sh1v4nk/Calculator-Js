@@ -1,5 +1,7 @@
 # Calculator
 
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
+
 Welcome to my simple Calculator project! This project is built using HTML, CSS, and JavaScript to provide users with a basic calculator for performing arithmetic operations.
 
 ## Table of Contents
